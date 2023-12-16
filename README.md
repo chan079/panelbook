@@ -6,3 +6,4 @@
 
 <img src="./cover.jpg" width="210" height="295" />
 
+데이터는 data 디렉토리, do 파일들은 codes 디렉토리에 있음
