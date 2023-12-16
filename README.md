@@ -2,5 +2,5 @@
 
 저자: 한치록
 
-<img src="./cover.jpg" width="50%" height="50%" />
+<img src="./cover.jpg" width="140" height="197" />
 
