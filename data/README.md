@@ -13,11 +13,11 @@
 - grunfeld.dta: Grunfeld, 1958
 - hongkong.dta: Hsiao, Ching and Wan, 2012, J of Appl Econom
 - htexample.dta: Hauman and Taylor example
-- klipsbal.dta: KLIPS for employed, 2005-2015, balanced
+- klipsbal.dta (version 13): KLIPS for employed, 2005-2015, balanced
 - lfp.dta
 - mroz.dta
 - mwp.dta: Panel data including wages and family status in R feisr package
-- nastabextr.dta: A subset of NASTAB 1-10
+- nastabextr.dta (version 13): A subset of NASTAB 1-10
 - oecdca.dta: WDI data 1980-2015
 - psidextract.dta
 - rsqex.dta: Simulated data for R-squareds
