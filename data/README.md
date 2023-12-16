@@ -1,5 +1,5 @@
 # 데이터
-Github로부터 직접 데이터를 읽어들이는 방법:
+Github로부터 직접 데이터를 읽어들이는 방법: `testfe.dta`를 읽어들이려면
 ```stata
 use https://github.com/chan079/panelbook/raw/main/data/testfe, clear
 ```
