@@ -2,5 +2,5 @@
 
 저자: 한치록
 
-![패널데이터강의 제4판](cover.jpg)
+<img src="./cover.jpg" width="50%" height="50%" />
 
