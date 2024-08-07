@@ -10,7 +10,7 @@ use https://github.com/chan079/panelbook/raw/main/data/testfe, clear
 - climate.dta: Burke, Hsiang, and Miguel, 2015
 - co2pc.dta: CO2 emissions (MT per capita) and GDP per capita (constant 2010 US$)
 - compclust.dta: Simulated data
-- crime4.dta
+- crime4.dta: [Wooldridge's CRIME4](https://econpapers.repec.org/paper/bocbocins/crime4.htm)
 - did3ex.dta: Simulated data for DID with T=3
 - fastfood.dta: Card and Krueger 1994, fastfood data, cleaned
 - growth-ex.dta: Simulated data, growth example
