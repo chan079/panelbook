@@ -8,7 +8,7 @@ use https://github.com/chan079/panelbook/raw/main/data/testfe, clear
 - basque-clean.dta: [Abadie and Gardeazabal, 2003][AG03], cleaned
 - basque.dta: [Abadie and Gardeazabal 2003][AG03]
 - climate.dta: [Burke, Hsiang, and Miguel, 2015][BHM15]
-- co2pc.dta: CO2 emissions (MT per capita) and GDP per capita (constant 2010 US$)
+- co2pc.dta: CO2 emissions (MT per capita) and GDP per capita (constant 2010 US$); source: [WDI]
 - compclust.dta: Simulated data
 - crime4.dta: [Wooldridge's CRIME4][CRIME4]
 - did3ex.dta: Simulated data for DID with T=3
@@ -17,8 +17,8 @@ use https://github.com/chan079/panelbook/raw/main/data/testfe, clear
 - grunfeld.dta: Grunfeld, 1958; from [Stata][Stata]
 - hongkong.dta: [Hsiao, Ching and Wan, 2012, J of Appl Econom][HCW12]
 - htexample.dta: Hauman and Taylor example
-- klipsbal.dta (version 13): KLIPS for employed, 2005-2015, balanced
-- lfp.dta
+- klipsbal.dta (version 13): [KLIPS] for employed, 2005-2015, balanced
+- lfp.dta: Source?
 - mroz.dta: A [Mroz 1987][Mroz87] data set
 - mwp.dta: Panel data including wages and family status in [R `feisr` package][feisr]
 - nastabextr.dta (version 13): A subset of [NASTAB][NASTAB] 1-10
@@ -52,6 +52,7 @@ use https://github.com/chan079/panelbook/raw/main/data/testfe, clear
 [feisr]: https://cran.r-project.org/package=feisr
 [Grunfeld]: https://www.stata-press.com/data/r9/xtmain.html
 [HCW12]: https://onlinelibrary.wiley.com/doi/10.1002/jae.1230
+[KLIPS]: https://www.kli.re.kr/klips
 [Mroz87]: https://www.jstor.org/stable/1911029
 [NASTAB]: https://www.kipf.re.kr/panel/
 [SemWoo13]: https://onlinelibrary.wiley.com/doi/full/10.1002/jae.1266
