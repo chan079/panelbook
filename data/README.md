@@ -4,6 +4,10 @@ Github로부터 직접 데이터를 읽어들이는 방법: 예를 들어 `testf
 use https://github.com/chan079/panelbook/raw/main/data/testfe, clear
 ```
 - ajry08five.dta: Income and Democracy Data, [Acemoglu et al. 2008 AER][AJRY08]
+  ```stata
+  use https://github.com/chan079/panelbook/raw/main/data/ajry08five, clear
+  ```
+
 - artificial.dta: Artificial data
 - basque-clean.dta: [Abadie and Gardeazabal, 2003][AG03], cleaned
 - basque.dta: [Abadie and Gardeazabal 2003][AG03]
