@@ -6,7 +6,7 @@
 
 <img src="./cover.jpg" width="210" height="295" />
 
-데이터는 [data](data) 디렉토리, do 파일들은 [codes](codes) 디렉토리에 있음
+데이터는 [data](data) 디렉토리, Stata do 파일들은 [codes](codes) 디렉토리에 있음
 
 ## 제4판 서문
 
