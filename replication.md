@@ -28,7 +28,7 @@ webuse abdata, clear
 ivregress 2sls d.n (ld.n = l2d.n l3d.n) l2d.n l(0/1).d.w l(0/2).d.(k ys) i.year, vce(cl id)
 * Column (f) AHl
 ivregress 2sls d.n (ld.n = l2.n) l2d.n l(0/1).d.w l(0/2).d.(k ys) i.year, vce(cl id)
-* Column (g) OLS - not exactly replicated
+* Column (g) OLS - b is the same but se is not
 reg l(0/2).n l(0/1).w l(0/2).(k ys) i.year, vce(cl id)
 * Column (h) WG - not exactly replicated
 xtreg l(0/2).n l(0/1).w l(0/2).(k ys) i.year, fe vce(r)
