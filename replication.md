@@ -7,17 +7,16 @@
 ```stata
 webuse abdata, clear
 * Column (a1)
-xtabond n l(0/1).w l(0/2).(k ys) yr1979-yr1984, lags(2) vce(r)
-xtabond2 l(0/2).n l(0/1).w l(0/2).(k ys) yr1979-yr1984, ///
-  gmm(l.n) iv(l(0/1).w l(0/2).(k ys) yr1979-yr1984) nol r
+global X l(0/1).w l(0/2).(k ys) yr1979-yr1984
+xtabond n $X, lags(2) vce(r)
+xtabond2 l(0/2).n $X, gmm(n, lag(2 .)) iv($X) nol r
 * Column (a2)
-xtabond n l(0/1).w l(0/2).(k ys) yr1979-yr1984, lags(2) vce(r) two
-xtabond2 l(0/2).n l(0/1).w l(0/2).(k ys) yr1979-yr1984, ///
-  gmm(l.n) iv(l(0/1).w l(0/2).(k ys) yr1979-yr1984) nol r two
+xtabond n $X, lags(2) two
+xtabond2 l(0/2).n $X, gmm(n, lag(2 .)) iv($X) nol two
 * Column (b)
-xtabond n l(0/1).w k l(0/1).ys yr1979-yr1984, lags(2) vce(r) two
-xtabond2 l(0/2).n l(0/1).w k l(0/1).ys yr1979-yr1984, ///
-  gmm(l.n) iv(l(0/1).w k l(0/1).ys yr1979-yr1984) two nol r
+global X l(0/1).w k l(0/1).ys yr1979-yr1984
+xtabond n $X, lags(2) two
+xtabond2 l(0/2).n $X, gmm(n, lag(2 .)) iv($X) two nol
 ```
 
 ### Table 5
@@ -26,12 +25,14 @@ xtabond2 l(0/2).n l(0/1).w k l(0/1).ys yr1979-yr1984, ///
 webuse abdata, clear
 * Column (e) AHd
 ivregress 2sls d.n (ld.n = l2d.n l3d.n) l2d.n l(0/1).d.w l(0/2).d.(k ys) i.year, vce(cl id)
+xtivreg n (l.n = l2.n l3.n) l2.n l(0/1).w l(0/2).(k ys) yr1981-yr1984, fd vce(r)
+xtivreg n (l.n = l2.n l3.n) l2.n l(0/1).w l(0/2).(k ys) yr1980-yr1984, nocons fd vce(r)
 * Column (f) AHl
 ivregress 2sls d.n (ld.n = l2.n) l2d.n l(0/1).d.w l(0/2).d.(k ys) i.year, vce(cl id)
-* Column (g) OLS - b is the same but se is not
+* Column (g) OLS - se different due to small sample adjustment
 reg l(0/2).n l(0/1).w l(0/2).(k ys) i.year, vce(cl id)
-* Column (h) WG - not exactly replicated
-xtreg l(0/2).n l(0/1).w l(0/2).(k ys) i.year, fe vce(r)
+* Column (h) WG - not replicable. why?
+xtreg l(0/2).n l(0/1).w l(0/2).(k ys) i.year, re vce(r)
 ```
 
 ## Blundell and Bond (1998)
