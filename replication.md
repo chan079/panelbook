@@ -40,6 +40,7 @@ xtreg l(0/2).n l(0/1).w l(0/2).(k ys) i.year, re vce(r)
 ### Table 4
 
 ```stata
+webuse abdata, clear
 * Column 3 (1976-84 GMM-DIF)
 xtabond2 l(0/1).(n w k) yr1978-yr1984, gmm(n w k, lag(2 .)) iv(yr1978-yr1984) r nol
 xtabond n yr1978-yr1984, pre(w k, lag(1,.)) vce(r)
