@@ -47,3 +47,30 @@ xtabond n yr1978-yr1984, pre(w k, lag(1,.)) vce(r)
 * Column 4 (1976-84 GMM-SYS) close but not exactly same
 xtabond2 l(0/1).(n w k) yr1978-yr1984, gmm(l.(n w k)) iv(yr*) r h(1)
 ```
+
+## Baltagi and Griffin (1983, 1997)
+
+### Data
+
+```stata
+local url https://www.wiley.com/legacy/wileychi/baltagi/supp/Gasoline.dat
+import delimited using "`url'", delimiters(" ", collapse) varnames(1) clear
+encode country, gen(country_id)
+drop country
+rename country_id country
+order country, first
+xtset country year
+save gasoline, replace
+```
+
+### Baltagi and Griffin (1983) Table 2
+
+```stata
+use gasoline, clear
+* OLS
+reg lgaspcar lincomep lrpmg lcarpcap
+* Within
+xtreg lgaspcar lincomep lrpmg lcarpcap, fe
+* Between
+xtreg lgaspcar lincomep lrpmg lcarpcap, be
+```
