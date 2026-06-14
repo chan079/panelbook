@@ -39,6 +39,8 @@ xtreg l(0/2).n l(0/1).w l(0/2).(k ys) i.year, re vce(r)
 
 ## Blundell and Bond (1998)
 
+[Blundell, R., and S. Bond (1998). Initial conditions and moment restrictions in dynamic panel data models. *Journal of Econometrics* 87(1): 115−143.](https://www.sciencedirect.com/science/article/abs/pii/S0304407698000098)
+
 ### Table 4
 
 ```stata
