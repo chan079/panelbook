@@ -2,6 +2,8 @@
 
 ## Arellano and Bond (1991)
 
+[Arellano, M., and S. Bond (1991). Some tests of specification for panel data: Monte Carlo evidence and an application to employment equations. *Review of Economic Studies* 58(2): 277–297.][https://academic.oup.com/restud/article-abstract/58/2/277/1563354?redirectedFrom=fulltext]
+
 ### Table 4
 
 ```stata
