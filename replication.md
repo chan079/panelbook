@@ -48,7 +48,7 @@ xtabond n yr1978-yr1984, pre(w k, lag(1,.)) vce(r)
 xtabond2 l(0/1).(n w k) yr1978-yr1984, gmm(l.(n w k)) iv(yr*) r h(1)
 ```
 
-## Baltagi and Griffin (1983, 1997)
+## Baltagi and Griffin (1983)
 
 ### Data
 
@@ -63,7 +63,7 @@ xtset country year
 save gasoline, replace
 ```
 
-### Baltagi and Griffin (1983) Table 2
+### Table 2
 
 ```stata
 use gasoline, clear
@@ -73,4 +73,18 @@ reg lgaspcar lincomep lrpmg lcarpcap
 xtreg lgaspcar lincomep lrpmg lcarpcap, fe
 * Between
 xtreg lgaspcar lincomep lrpmg lcarpcap, be
+* Swamy and Arora
+xtreg lgaspcar lincomep lrpmg lcarpcap, re
+```
+
+### Table 3
+
+```stata
+use gasoline, clear
+* OLS
+reg lgaspcar lincomep lrpmg lcarpcap l.lgaspcar
+* Within
+xtreg lgaspcar lincomep lrpmg lcarpcap l.lgaspcar, fe
+* Swamy and Arora
+xtreg lgaspcar lincomep lrpmg lcarpcap l.lgaspcar, re
 ```
