@@ -50,6 +50,8 @@ xtabond2 l(0/1).(n w k) yr1978-yr1984, gmm(l.(n w k)) iv(yr*) r h(1)
 
 ## Baltagi and Griffin (1983)
 
+Baltagi, B. H., and J. M. Griffin. 1983. Gasoline demand in the OECD: an application of pooling and testing procedures. *European Economic Review* 22: 117−137.
+
 ### Data
 
 ```stata
